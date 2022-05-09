@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="12.24">
+    <testcase classname="Swag Bags page functionality" name="Checkout validation scenario" time="3.354">
+        <system-out><![CDATA[Given Launch Url in the browser  "https://www.saucedemo.com/"...............passed
+And Login usernamme as "standard_user" and password as "secret_sauce".......passed
+Then verify the page title "Swag Labs"......................................passed
+And Check out the product...................................................passed
+Then Fill customer details firstname as "Raja" lastname "Rajan" and zipcode "636704".passed
+Then Validation of selected product.........................................passed
+And Signout from the page...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Swag Bags page functionality" name="T_Shirt Validation" time="1.791">
+        <system-out><![CDATA[Given Launch Url in the browser  "https://www.saucedemo.com/"...............passed
+And Login usernamme as "standard_user" and password as "secret_sauce".......passed
+Then verify the page title "Swag Labs"......................................passed
+Then Fetch all the product and Check "Sauce Labs Bolt T-Shirt" is available..passed
+And logout from the page....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Swag Bags page functionality" name="Price validation" time="3">
+        <system-out><![CDATA[Given Launch Url in the browser  "https://www.saucedemo.com/"...............passed
+And Login usernamme as "standard_user" and password as "secret_sauce".......passed
+Then verify the page title "Swag Labs"......................................passed
+Then Fething the price and removing the dollor and validating the price.....passed
+Then Signout................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Swag Bags page functionality" name="Sorting the product Scenario" time="2.325">
+        <system-out><![CDATA[Given Launch Url in the browser  "https://www.saucedemo.com/"...............passed
+And Login usernamme as "standard_user" and password as "secret_sauce".......passed
+Then verify the page title "Swag Labs"......................................passed
+Then Sort the product 2.....................................................passed
+Then Fetch the prodct and print it in console...............................passed
+Then Signout................................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Wrong Username feature" name="Invalid User Id" time="1.577">
+        <system-out><![CDATA[Given Open chrome and launch the Url "https://www.saucedemo.com/"...........passed
+And Enter wrong usernamme as "wrongname" and pwd as "wrong_password"........passed
+Then verify the page title "Swag Labs" is not displayed.....................passed
+]]></system-out>
+    </testcase>
+</testsuite>
